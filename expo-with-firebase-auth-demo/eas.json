@@ -14,6 +14,12 @@
         "gradleCommand": ":app:assembleRelease"
       }
     },
+    "stand": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
     "production": {}
   },
   "submit": {
