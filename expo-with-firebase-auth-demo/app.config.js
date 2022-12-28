@@ -1,10 +1,10 @@
 import 'dotenv/config';
 
-export default  
-{
+export default
+  {
     "expo": {
-      "name": "expo-with-firebase-auth-demo",
-      "slug": "expo-with-firebase-auth-demo",
+      "name": "FirebaseEmailAuth",
+      "slug": "Firebase-Email-Auth",
       "version": "1.0.0",
       "orientation": "portrait",
       "icon": "./assets/icon.png",
@@ -24,6 +24,7 @@ export default
         "supportsTablet": true
       },
       "android": {
+        "package": "com.firebaseemailauth",
         "adaptiveIcon": {
           "foregroundImage": "./assets/adaptive-icon.png",
           "backgroundColor": "#FFFFFF"
@@ -33,6 +34,9 @@ export default
         "favicon": "./assets/favicon.png"
       },
       "extra": {
+        "eas": {
+          "projectId": "48fab2e9-718b-463b-bb99-42cd98f3f2b2"
+        },
         firebaseApiKey: process.env.FIREBASE_API_KEY,
         firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN,
         firebaseProjectId: process.env.FIREBASE_PROJECT_ID,
@@ -42,4 +46,5 @@ export default
       }
     }
   }
-  
+
+
